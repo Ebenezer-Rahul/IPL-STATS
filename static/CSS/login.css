@@ -1,0 +1,23 @@
+.sign{
+  margin-top: 15%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.input{
+  margin-bottom: 20px;
+  display: grid;
+  justify-content: center;
+}
+input{
+  padding: 10px;
+}
+button{
+  padding: 10px;
+  background-color: blue;
+  color:white;
+  border: none;
+  align-items: center;
+}
+.button{
+  text-align: center;
+}
