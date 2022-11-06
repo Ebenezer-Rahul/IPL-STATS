@@ -3,7 +3,7 @@ html{
 }
 body{
   background-color: white;
-  height:1000px;
+  /*height:1000px;*/
   margin: 0;
 }
 a{
@@ -69,7 +69,7 @@ a{
   padding:15px;
 }
 .right_boxes:hover{
-  background-color: rgb(139, 139, 139);
+  background-color: rgb(211, 207, 207);
   cursor:pointer;
   text-decoration: underline;
 }
@@ -88,7 +88,8 @@ a{
 .footer_entry{
   background-color: rgb(0, 0, 0);
   color:rgb(255, 255, 255);
-  margin-top: 940px;
+  text-align: center;
+  /*margin-top: 940px;*/
   bottom:0;
   margin-bottom: 0;
   margin-left: 0;
