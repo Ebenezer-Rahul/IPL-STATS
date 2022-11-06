@@ -3,16 +3,16 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--for device compatibiliity-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="table.css">
-    <link rel="stylesheet" href="dropdownstyle.css">
+    <link rel="stylesheet" href="../static/CSS/header.css">
+    <link rel="stylesheet" href="../static/CSS/table.css">
+    <link rel="stylesheet" href="../static/CSS/dropdownstyle.css">
   </head>
   <body>
     <div class="header_entry">
       <div style="flex:1" class="ipl_part">
-        <!--<div>
-          <img class="ipl_logo" src="photos/index.png" alt="IPL 2020">
-        </div>-->
+        <div>
+          <img class="ipl_logo" src="../static/images/index.png" alt="IPL 2020">
+        </div>
         <div style="margin-left:10px; font-style: italic; font-size: 30px;">
           <!--<abbr title="INDIAN PREMIER LEAGUE">IPL 2020</abbr>-->
           IPL 2020
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="right_header">
-        <button class="but" type="button">login</button>
+        <button onclick="location.href='./login.html'" class="but" type="button">login</button>
         <input class="Search_bar" type="text" placeholder="  Search...">
       </div>
     </div>
@@ -59,7 +59,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr style="background-color:rgb(185, 179, 179)">
+        <tr class="grayrow">
           <td>1</td>
           <td class="teami">MUMBAI INDIANS</td>
           <td>7</td>
@@ -69,7 +69,7 @@
           <td>14</td>
           <td>1.435</td>
         </tr>
-        <tr>
+        <tr class="whiterow">
           <td>2</td>
           <td class="teami">CHENNAI BETTING KINGS</td>
           <td>7</td>
@@ -79,7 +79,7 @@
           <td>8</td>
           <td>0.754</td>
         </tr>
-        <tr style="background-color:rgb(185, 179, 179)">
+        <tr class="grayrow">
           <td>3</td>
           <td class="teami" >GUJARAT LIONS</td>
           <td>7</td>
@@ -89,7 +89,47 @@
           <td>6</td>
           <td>0.437</td>
         </tr>
-        <tr>
+        <tr class="whiterow">
+          <td>4</td>
+          <td class="teami">Royal Chanllangers Banglore</td>
+          <td>7</td>
+          <td>1</td>
+          <td>6</td>
+          <td>0</td>
+          <td>2</td>
+          <td>-0.765</td>
+        </tr>
+        <tr class="grayrow">
+          <td>1</td>
+          <td class="teami">MUMBAI INDIANS</td>
+          <td>7</td>
+          <td>7</td>
+          <td>0</td>
+          <td>0</td>
+          <td>14</td>
+          <td>1.435</td>
+        </tr>
+        <tr class="whiterow">
+          <td>2</td>
+          <td class="teami">CHENNAI BETTING KINGS</td>
+          <td>7</td>
+          <td>4</td>
+          <td>3</td>
+          <td>0</td>
+          <td>8</td>
+          <td>0.754</td>
+        </tr>
+        <tr class="grayrow">
+          <td>3</td>
+          <td class="teami" >GUJARAT LIONS</td>
+          <td>7</td>
+          <td>3</td>
+          <td>4</td>
+          <td>0</td>
+          <td>6</td>
+          <td>0.437</td>
+        </tr>
+        <tr class="whiterow">
           <td>4</td>
           <td class="teami">Royal Chanllangers Banglore</td>
           <td>7</td>

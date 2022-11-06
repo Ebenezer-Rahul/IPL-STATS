@@ -11,12 +11,6 @@ table{
   cursor:pointer;
   text-decoration: none;
 }
-tr{
-  display:grid;
-  height:40px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  align-items: center;
-}
 td{
   margin-left: 70px;
 }
@@ -26,4 +20,19 @@ td{
 }
 th{
   margin-left: 0;
+}
+tr{
+  display:grid;
+  height:40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+.grayrow{
+  background-color:rgb(255, 255, 255);
+}
+.whiterow{
+  background-color:rgb(235, 235, 235);
+}
+tr:hover{
+  background-color: rgb(168, 136, 142);
 }
