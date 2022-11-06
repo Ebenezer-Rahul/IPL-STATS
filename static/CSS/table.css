@@ -1,0 +1,29 @@
+table{
+  background-color:white;
+  color:black;
+  width: 100%;
+  margin-top: 0px;
+}
+.teami{
+  margin-left: 0;
+}
+.team:hover{
+  cursor:pointer;
+  text-decoration: none;
+}
+tr{
+  display:grid;
+  height:40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+td{
+  margin-left: 70px;
+}
+.header_table{
+  color:white;
+  background-color: rgb(240, 82, 108);
+}
+th{
+  margin-left: 0;
+}
