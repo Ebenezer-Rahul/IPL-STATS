@@ -7,17 +7,11 @@
   margin-bottom: 20px;
   display: grid;
   justify-content: center;
+  text-align: center;
 }
-input{
-  padding: 10px;
-}
-button{
-  padding: 10px;
-  background-color: blue;
-  color:white;
-  border: none;
-  align-items: center;
+.inside{
+  padding :10px;
 }
 .button{
   text-align: center;
-}
+} 

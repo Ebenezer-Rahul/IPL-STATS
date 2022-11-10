@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="../static/CSS/matches.css">
+    <link rel="stylesheet" href="../static/CSS/header.css">
+    <link rel="stylesheet" href="../static/CSS/dropdownstyle.css">
   </head>
   <body>
     <div class="header_entry">
@@ -11,7 +13,7 @@
         </div>
         <div style="margin-left:10px; font-style: italic; font-size: 30px;">
           <!--<abbr title="INDIAN PREMIER LEAGUE">IPL 2020</abbr>-->
-          IPL 2020
+          <a class="home" href="./overall.html">IPL 2020</a>
         </div>
       </div>
       <div  style="flex:1" class="middle_header">
@@ -34,7 +36,10 @@
         </div>
       </div>
       <div class="right_header">
-        <button onclick="location.href='www.youtube.com'" class="but" type="button">login</button>
+        <!--<form>
+          <input type="button" value="login" onclick="goToInteralLink('./login.html')"/>
+        </form>-->
+        <button onclick="location.href='./login.html'" class="but" type="button">login</button>
         <input class="Search_bar" type="text" placeholder="  Search...">
       </div>
     </div>
