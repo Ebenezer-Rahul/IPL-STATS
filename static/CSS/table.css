@@ -26,6 +26,7 @@ tr{
   height:40px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
+  padding: 2px;
 }
 .header_table:hover{
   background-color: #263D88;
