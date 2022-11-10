@@ -16,7 +16,7 @@ td{
 }
 .header_table{
   color:white;
-  background-color: rgb(240, 82, 108);
+  background-color:#263D88;
 }
 th{
   margin-left: 0;
@@ -27,6 +27,9 @@ tr{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
 }
+.header_table:hover{
+  background-color: #263D88;
+}
 .grayrow{
   background-color:rgb(255, 255, 255);
 }
@@ -34,5 +37,5 @@ tr{
   background-color:rgb(235, 235, 235);
 }
 tr:hover{
-  background-color: rgb(168, 136, 142);
+  background-color: #8e9ed4;
 }
