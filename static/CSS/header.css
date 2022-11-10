@@ -2,7 +2,6 @@ html{
   -webkit-text-size-adjust: 100%;
 }
 body{
-  background-color: white;
   height:100%;
   margin: 0;
 }
@@ -96,3 +95,8 @@ a{
   margin-right: 0;
   height: 60px;
 }
+/*.background{
+  size:cover;
+  background-attachment: fixed;
+  width: 100px;
+}*/
