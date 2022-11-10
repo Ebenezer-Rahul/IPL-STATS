@@ -12,6 +12,9 @@
   grid-template-columns: 1fr 1fr 70px 1fr;
   margin-bottom: 20px;
 }
+.left_box{
+  margin-left: 10px;
+}
 p{
   margin-top: 10px;
 }

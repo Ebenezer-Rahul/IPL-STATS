@@ -13,6 +13,7 @@ table{
 }
 td{
   margin-left: 70px;
+  overflow-x: scroll;
 }
 .header_table{
   color:white;
@@ -27,6 +28,7 @@ tr{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   padding: 2px;
+  overflow-x: scroll;
 }
 .header_table:hover{
   background-color: #263D88;
