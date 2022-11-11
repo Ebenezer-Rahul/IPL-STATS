@@ -12,35 +12,32 @@
           <img class="ipl_logo" src="../static/images/ipl.jpg" alt="IPL 2020">
         </div>
         <div style="margin-left:10px; font-style: italic; font-size: 30px;">
-          <!--<abbr title="INDIAN PREMIER LEAGUE">IPL 2020</abbr>-->
           <a class="home" href="./home.html">IPL 2020</a>
         </div>
       </div>
       <div  style="flex:1" class="middle_header">
         <div class="right_boxes">
-          <a href="./matches.html">Matches</a>
+          <a class="right_box" href="./matches.html">Matches</a>
         </div>
         <div class="right_boxes">
-          <a href="./team.html">Teams</a>
+          <a class="right_box" href="./home.html">Teams</a>
         </div>
         <div class="right_boxes">
-          <a href="./player.html">Squad</a>
+          <a class="right_box" href="./player.html">Players</a>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown</button>
+        <div class="dropdown"><!--can use select once check-->
+          <button class="dropbtn">More ...</button>
           <div class="dropdown-content">
-            <a href="#">fairplay award</a>
-            <a href="#">venues</a>
-            <a href="#">etc</a>
+            <a class="dropdown" href="#">DELIVERIES</a>
+            <a class="dropdown" href="#">MVP</a>
+            <a class="dropdown" href="#">ABOUT</a>
+            <a class="dropdown" href="#">ADMIN</a>
           </div>
         </div>
       </div>
       <div class="right_header">
-        <!--<form>
-          <input type="button" value="login" onclick="goToInteralLink('./login.html')"/>
-        </form>-->
         <button onclick="location.href='./login.html'" class="but" type="button">login</button>
-        <input class="Search_bar" type="text" placeholder="  Search...">
+        <form autocomplete="on"><input class="Search_bar" type="text" placeholder="  Search..."></form>
       </div>
     </div>
     <div class="empty"></div>
@@ -209,5 +206,8 @@
       </div>
     </div>
     </div>
+    <footer class="footer_entry">
+      <small>copyrights<sup>R</sup></small>
+    </footer>
   </body>
 </html>
