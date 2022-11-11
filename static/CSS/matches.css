@@ -7,13 +7,18 @@
   margin-bottom: 0;
 }
 .insidematch{
-  margin-top: 13px;
+  top: 13px;
   display:grid;
   grid-template-columns: 1fr 1fr 70px 1fr;
   margin-bottom: 20px;
+  text-decoration: none;
+}
+.insidematch:hover{
+  background-color: rgb(226, 226, 226);
 }
 .left_box{
   margin-left: 10px;
+  text-decoration: none;
 }
 p{
   margin-top: 10px;
@@ -24,6 +29,7 @@ p{
   height:100px;
   border-radius:50px;
   border: 1px solid rgb(0, 0, 0);
+  margin-top: 4px;
 }
 .team_name{
   display: grid;
@@ -37,4 +43,7 @@ p{
 }
 .empty{
   margin-top:60px;
+}
+.matchbut{
+  text-decoration: none;
 }
