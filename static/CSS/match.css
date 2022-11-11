@@ -1,0 +1,60 @@
+.heading{
+  background-color: rgb(255, 137, 156);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display :flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.insidematch{
+  top: 13px;
+  display:grid;
+  grid-template-columns: 1fr 10px 1fr;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.left_box{
+  margin-left: 10px;
+  text-decoration: none;
+}
+.imagemum{
+  margin-left: 10px;
+  width:100px;
+  height:100px;
+  border-radius:50px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 4px;
+}
+.team_name{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-left: 150px;
+}
+.versus{
+  margin-top: 30px;
+}
+.score{
+  color :rgb(255, 0, 0);
+}
+.empty{
+  margin-top:60px;
+}
+.matchbut{
+  text-decoration: none;
+}
+.location{
+  margin-left: 400px;
+}
+.table_matchl{
+  margin-left: 150px;
+}
+.table_matchr{
+  margin-left: 200px;
+}
+.row{
+  width : 180px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(115, 113, 207);
+}
