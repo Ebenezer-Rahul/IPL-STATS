@@ -50,12 +50,15 @@ def match(m_id):
 
 @app.route('/players')
 def players():
-    return render_template("home.html");
+    cur.execute('SELECT * FROM Player ORDER BY player_name')
+    players = cur.fetchall()
+    print(players[0])
+    return render_template("players.html", players=players);
 
 @app.route('/player/pid=<int:pid>')
 def player(pid):
     print(pid)
-    return render_template("home.html");
+    return render_template("stat.html");
 
 
 @app.route('/deliveries/mid=<int:m_id>')
@@ -66,6 +69,9 @@ def deliveries(m_id):
         print(delivery)
     return render_template("home.html");
 
+@app.route('/login')
+def login():
+    return render_template("login.html")
 
 
 if __name__ == ' __main__':

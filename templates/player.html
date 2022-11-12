@@ -23,10 +23,10 @@
           <a class="right_box" href="/matches">Matches</a>
         </div>
         <div class="right_boxes">
-          <a class="right_box" href="/home">Teams</a>
+          <a class="right_box" href="/">Teams</a>
         </div>
         <div class="right_boxes">
-          <a class="right_box" href="/player">Players</a>
+          <a class="right_box" href="/players">Players</a>
         </div>
         <div class="dropdown"><!--can use select once check-->
           <button class="dropbtn">More ...</button>
@@ -75,7 +75,7 @@
     </thead>
     <tbody>
     {% for player in players %}
-    <tr>
+    <tr onclick="window.location.href = '/player/pid={{player[0]}}';">
       <td>
         {{ player[1] }}
       </td>

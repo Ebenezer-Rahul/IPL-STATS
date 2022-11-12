@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <link rel="stylesheet" href="../static/CSS/stat.css">
+    <link rel="stylesheet" href="../static/CSS/player.css">
     <link rel="stylesheet" href="../static/CSS/header.css">
     <link rel="stylesheet" href="../static/CSS/dropdownstyle.css">
   </head>
@@ -43,85 +43,72 @@
         <form autocomplete="on"><input class="Search_bar" type="text" placeholder="  Search..."></form>
       </div>
     </div>
-    <div class="player">R SHARMA</div>
-    <div class="teamname">MUMBAI INDIANS</div>
-    <div class="division">
-    <div class="batting">
+    <div>
       <table>
-          <tr>
-            <th>
-              teamid
-            </th>
-            <td>
-              45
-            </td>
-          </tr>
-          <tr>
-            <th>
-              runs
-            </th>
-            <td>
-              4530
-            </td>
-          </tr>
-          <tr>
-            <th>
-              strike rate
-            </td>
-            <td>
-              136.9
-            </td>
-          </tr>
-          <tr>
-            <th>
-              highest Score
-            </th>
-            <td>
-              118
-            </td>
-          </tr>
-      </table>
-    </div>
-    <div class="batting">
-      <table>
-        <tr>
-          <th>
-            wickets taken
-          </th>
-          <td>
-            45
-          </td>
-        </tr>
-        <tr>
-          <th>
-            average
-          </th>
-          <td>
-            25
-          </td>
-        </tr>
-        <tr>
-          <th>
-            best figures
-          </td>
-          <td>
-            10/3
-          </td>
-        </tr>
-        <tr>
-          <th>
-            economy
-          </th>
-          <td>
-            23
-          </td>
-        </tr>
-    </table>
-  </div>
-  </div>
-  <footer class="footer_entry">
-    <small>copyrights<sup>R</sup></small>
-  </footer>
-  </body>
-</html>
+    <thead>
+      <tr class="thead">
+        <th>
+          name
+        </th>
+        <th>
+          team_id
+        </th>
+        <th>
+          team_name
+        </th>
+        <th>
+          runs
+        </th>
+        <th>
+          wickets
+        </th>
+        <th>
+          sixers
+        </th>
+        <th>
+          fours
+        </th>
+        <th>
+          srtike_rate
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for player in players %}
+    <tr onclick="window.location.href = '/player/pid={{player[0]}}';">
+      <td>
+        {{ player[1] }}
+      </td>
+      <td>
+        {{ player[2] }}
+      </td>
+      <td>
+        {{ player[3] }}
+      </td>
+      <td>
+        {{ player[4] }}
+      </td>
+      <td>
+        {{ player[5] }}
+      <td>
+        {{ player[9] }}
+      </td>
+      <td>
+        {{ player[10] }}
+      </td>
+      <td>
+        {{ player[16] }}
+      </td>
+    </tr>
+    {% endfor %}
 
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+<footer class="footer_entry">
+  <small>copyrights<sup>R</sup></small>
+</footer>
+</body>
+</html>
