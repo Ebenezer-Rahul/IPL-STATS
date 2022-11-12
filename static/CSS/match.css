@@ -4,14 +4,13 @@
   padding-bottom: 4px;
   display :flex;
   justify-content: center;
-  margin-bottom: 0;
 }
 .insidematch{
-  top: 13px;
   display:grid;
   grid-template-columns: 1fr 10px 1fr;
   margin-bottom: 20px;
   text-decoration: none;
+  margin-bottom: 60px;
 }
 .left_box{
   margin-left: 10px;
