@@ -17,7 +17,7 @@
           <img class="ipl_logo" src="../static/images/ipl.jpg" alt="IPL 2020">
         </div>
         <div style="margin-left:10px; font-style: italic; font-size: 30px;">
-          <a class="home" href="/">IPL 2020</a>
+          <a class="home" href="/">IPL<a>
         </div>
       </div>
       <div  style="flex:1" class="middle_header">
@@ -33,8 +33,8 @@
         <div class="dropdown"><!--can use select once check-->
           <button class="dropbtn">More ...</button>
           <div class="dropdown-content">
-            <a class="dropdown" href="#">DELIVERIES</a>
-            <a class="dropdown" href="#">MVP</a>
+
+            <a class="dropdown" href="/mvp">MVP</a>
             <a class="dropdown" href="#">ABOUT</a>
             <a class="dropdown" href="#">ADMIN</a>
           </div>
@@ -54,13 +54,14 @@
       </div>
     </div>
     <div class="sign">Please Sign In</div>
-    <form action="./xxx.zinga" autocomplete="on">
-      <div class="input"><input class="inside" type="text" placeholder="name@gmail.com    "><br></div><!--in javascript need to be removed-->
-      <div class="input"><input class="inside" type="password" placeholder="password..    "><br></div><!--in javascript need to be removed-->
+    <form action="/login" method="POST" autocomplete="on">
+      <div class="input"><input class="inside" type="text" name="username" placeholder="name@gmail.com    "><br></div><!--in javascript need to be removed-->
+      <div class="input"><input class="inside" type="password" name="password" placeholder="password..    "><br></div><!--in javascript need to be removed-->
       <div class="button"><input class="inside" type="submit" value="submit"></div><!--in javascript need to be removed-->
     </form>
-    <footer class="footer_entry">
-      <small>copyrights<sup>R</sup></small>
-    </footer>
+    <br/>
+    <br/>
+   <p style="text-align:centre">{{ mesg }}</p>
+
   </body>
 </html>
