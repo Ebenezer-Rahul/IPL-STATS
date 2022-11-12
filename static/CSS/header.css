@@ -11,10 +11,6 @@ header{
   height: 60px;
   /*margin-bottom: 70px;*/
 }
-.articlematch{
-  flex: 1;
-  margin-bottom: 10px;
-}
 .right_box{
   color:white;
   text-decoration: none;
