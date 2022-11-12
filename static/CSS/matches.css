@@ -6,6 +6,7 @@
   justify-content: center;
   margin-bottom: 0;
   margin-top: 60px;
+  width: 100%;
 }
 .insidematch{
   top: 13px;
@@ -15,7 +16,7 @@
   text-decoration: none;
 }
 .insidematch:hover{
-  background-color: rgb(238, 230, 230);
+  background-color: rgb(236, 236, 236);
 }
 .left_box{
   margin-left: 10px;

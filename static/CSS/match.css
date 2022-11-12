@@ -5,6 +5,14 @@
   display :flex;
   justify-content: center;
   margin-bottom: 0;
+  margin-top: 0px;
+}
+.headingl{
+  background-color: rgb(255, 137, 156);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display :flex;
+  justify-content: center;
   margin-top: 60px;
 }
 .insidematch{
@@ -27,12 +35,12 @@
   color:white;
   text-decoration: none;
 }
-.row{
+.rowe{
   width : 180px;
   padding: 3px;
   text-align: center;
   border-radius: 10px;
-  background-color: rgb(79, 67, 190);
+  background-color: rgb(81, 69, 194);
   color: white;
 }
 .totalpage{
@@ -84,13 +92,6 @@
 }
 .table_matchr{
   margin-left: 200px;
-}
-.row{
-  width : 180px;
-  padding: 3px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: rgb(160, 236, 211);
 }
 .totalpage{
   display: flex;
