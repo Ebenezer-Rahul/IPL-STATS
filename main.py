@@ -26,6 +26,14 @@ def index():
         print(team)
     return render_template("home.html", teams=teams, i = 0);
 
+@app.route('/team/t_id=<int:t_id>')
+def team(t_id):
+    cur.execute(f'SELECT * FROM Player WHERE Player.team_id={t_id} ORDER BY runs DESC ')
+    players = cur.fetchall();
+
+    return render_template("player.html", players=players);
+
+
 
 @app.route('/matches')
 def matches():
@@ -33,16 +41,12 @@ def matches():
     matches = cur.fetchall()
     connection.commit()
     print(matches[0])
-    for match in matches:
-        s = match[1].strftime("%A %d %B %Y")
-        #match[1] = s
-        print(match[1])
-    return render_template("matches.html", matches=matches);
+    return render_template("matches.html", matches=matches, abs=abs);
 
-@app.route('/match')
-def match():
+@app.route('/match/mid=<int:m_id>')
+def match(m_id):
 
-    return render_template("home.html");
+    return render_template("match.html");
 
 @app.route('/players')
 def players():
@@ -54,8 +58,12 @@ def player(pid):
     return render_template("home.html");
 
 
-@app.route('/deliveries')
-def deliveries():
+@app.route('/deliveries/mid=<int:m_id>')
+def deliveries(m_id):
+    cur.execute(f'SELECT * FROM Delivery WHERE match_id={m_id}')
+    deliveries = cur.fetchall()
+    for delivery in deliveries :
+        print(delivery)
     return render_template("home.html");
 
 
