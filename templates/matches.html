@@ -12,76 +12,78 @@
           <img class="ipl_logo" src="../static/images/ipl.jpg" alt="IPL 2020">
         </div>
         <div style="margin-left:10px; font-style: italic; font-size: 30px;">
-          <!--<abbr title="INDIAN PREMIER LEAGUE">IPL 2020</abbr>-->
-          <a class="home" href="./home.html">IPL 2020</a>
+          <a class="home" href="/">IPL 2020</a>
         </div>
       </div>
       <div  style="flex:1" class="middle_header">
         <div class="right_boxes">
-          <a href="./matches.html">Matches</a>
+          <a class="right_box" href="/matches">Matches</a>
         </div>
         <div class="right_boxes">
-          <a href="./team.html">Teams</a>
+          <a class="right_box" href="/">Teams</a>
         </div>
         <div class="right_boxes">
-          <a href="./player.html">Squad</a>
+          <a class="right_box" href="/player">Players</a>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown</button>
+        <div class="dropdown"><!--can use select once check-->
+          <button class="dropbtn">More ...</button>
           <div class="dropdown-content">
-            <a href="#">fairplay award</a>
-            <a href="#">venues</a>
-            <a href="#">etc</a>
+            <a class="dropdown" href="#">DELIVERIES</a>
+            <a class="dropdown" href="#">MVP</a>
+            <a class="dropdown" href="#">ABOUT</a>
+            <a class="dropdown" href="#">ADMIN</a>
           </div>
         </div>
       </div>
       <div class="right_header">
-        <!--<form>
-          <input type="button" value="login" onclick="goToInteralLink('./login.html')"/>
-        </form>-->
-        <button onclick="location.href='./login.html'" class="but" type="button">login</button>
-        <input class="Search_bar" type="text" placeholder="  Search...">
+        <button onclick="location.href='/login'" class="but" type="button">login</button>
+        <form autocomplete="on"><input class="Search_bar" type="text" placeholder="  Search..."></form>
       </div>
     </div>
     <div class="empty"></div>
-    {% for match in matches %}
+    {% for match in matches : %}
     <div class="first_match">
-    <div class="heading">MUMBAI WON BY 2 WICKETS</div>
-    <div class="insidematch">
-      <div class="left_box">
-          <p>{{ match[1].strftime("%A %d %B %Y" )}}</p>
-          <p>4:30(IST)</p>
-          <p>WANKHADE,MUMBAI</p>
-      </div>
-      <div class="middle_boxw">
-        <div class="team_name">
-          <div><img class="imagemum" src="../static/images/mum.png" alt="mumbai indians"></div>
-          <div>
-            <p>MUMBAI INDIANS</p>
-            <p class="score">127/8</p>
-            <p>(ov: 20/20)</p>
+      {% if match[13] == 'runs': %}
+    <div class="heading">{{match[12]}} WON BY {{abs(match[17] - match[18])}} {{match[13]}}</div>
+      {% else : %}
+      <div class="heading">{{match[12]}} WON BY 2 {{match[13]}}</div>
+      {% endif %}
+    <div class="insidematch"  onclick="window.location.href = '#';">
+        <div class="left_box">
+            <p>{{match[1].strftime("%A %d %B %Y")}}</p>
+            <p>{{ match[6]}} , {{ match[7] }}</p>
+        </div>
+        <div class="middle_boxw">
+          <div class="team_name">
+            <div><img class="imagemum" src="../static/images/{{ match[3] }}.png" alt="{{ match[3] }}"></div>
+            <div>
+              <p>{{ match[3] }}</p>
+              <p class="score">{{match[17]}}/8</p>
+              <p>(ov: 20/20)</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="versus">
-        vs
-      </div>
-      <div class="middle_boxl">
-        <div class="team_name">
-          <div><img class="imagemum" src="../static/images/index.jpg" alt="mumbai indians"></div>
-          <div>
-            <p>CHENNAI BETTING KINGS</p>
-            <p class="score">126/6</p>
-            <p>(ov: 20/20)</p>
+        <div class="versus">
+          vs
+        </div>
+        <div class="middle_boxl">
+          <div class="team_name">
+            <div><img class="imagemum" src="../static/images/{{ match[5] }}.png" alt="{{ match[5] }}"></div>
+            <div>
+              <p>{{ match[5] }}</p>
+              <p class="score">{{match[18]}}/6</p>
+              <p>(ov: 20/20)</p>
+            </div>
           </div>
         </div>
-      </div>
     </div>
     </div>
     {% endfor %}
+
+
     <div class="first_match">
     <div class="heading">MUMBAI WON BY 2 WICKETS</div>
-    <div class="insidematch">
+    <div class="insidematch" onclick="window.location.href = './home.html';">
       <div class="left_box">
           <p>TUESDAY 25 OCTOBER</p>
           <p>4:30(IST)</p>
@@ -114,7 +116,7 @@
     </div>
     <div class="first_match">
     <div class="heading">MUMBAI WON BY 2 WICKETS</div>
-    <div class="insidematch">
+    <div class="insidematch" onclick="window.location.href = './home.html';">
       <div class="left_box">
           <p>TUESDAY 25 OCTOBER</p>
           <p>4:30(IST)</p>
@@ -147,7 +149,7 @@
     </div>
     <div class="first_match">
     <div class="heading">MUMBAI WON BY 2 WICKETS</div>
-    <div class="insidematch">
+    <div class="insidematch" onclick="window.location.href = './home.html';">
       <div class="left_box">
           <p>TUESDAY 25 OCTOBER</p>
           <p>4:30(IST)</p>
@@ -180,7 +182,7 @@
     </div>
     <div class="first_match">
     <div class="heading">MUMBAI WON BY 2 WICKETS</div>
-    <div class="insidematch">
+    <div class="insidematch" onclick="window.location.href = './home.html';">
       <div class="left_box">
           <p>TUESDAY 25 OCTOBER</p>
           <p>4:30(IST)</p>
@@ -211,5 +213,8 @@
       </div>
     </div>
     </div>
+    <footer class="footer_entry">
+      <small>copyrights<sup>R</sup></small>
+    </footer>
   </body>
 </html>

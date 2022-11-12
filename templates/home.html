@@ -14,39 +14,39 @@
           <img class="ipl_logo" src="../static/images/ipl.jpg" alt="IPL 2020">
         </div>
         <div style="margin-left:10px; font-style: italic; font-size: 30px;">
-          <!--<abbr title="INDIAN PREMIER LEAGUE">IPL 2020</abbr>-->
-          <a class="home" href="./home.html">IPL 2020</a>
+          <a class="home" href="/">IPL 2020</a>
         </div>
       </div>
       <div  style="flex:1" class="middle_header">
         <div class="right_boxes">
-          <a href="./matches.html">Matches</a>
+          <a class="right_box" href="/matches">Matches</a>
         </div>
         <div class="right_boxes">
-          <a href="./team.html">Teams</a>
+          <a class="right_box" href="/home">Teams</a>
         </div>
         <div class="right_boxes">
-          <a href="./player.html">Squad</a>
+          <a class="right_box" href="/players">Players</a>
         </div>
         <div class="dropdown"><!--can use select once check-->
-          <button class="dropbtn">Dropdown</button>
+          <button class="dropbtn">More ...</button>
           <div class="dropdown-content">
-            <a href="#">fairplay award</a>
-            <a href="#">venues</a>
-            <a href="#">etc</a>
+            <a class="dropdown" href="#">DELIVERIES</a>
+            <a class="dropdown" href="#">MVP</a>
+            <a class="dropdown" href="#">ABOUT</a>
+            <a class="dropdown" href="#">ADMIN</a>
           </div>
         </div>
       </div>
       <div class="right_header">
-        <button onclick="location.href='./login.html'" class="but" type="button">login</button>
-        <input class="Search_bar" type="text" placeholder="  Search...">
+        <button onclick="location.href='/login.html'" class="but" type="button">login</button>
+        <form autocomplete="on"><input class="Search_bar" type="text" placeholder="  Search..."></form>
       </div>
     </div>
     <!--<div class="background">
         <img src="../static/images/images.jpg" alt="MUMBAI INDIANS">
     </div>-->
     <div class="ipl2020">
-      MUMBAI INDIANS
+      <a>MUMBAI INDIANS</a>
     </div>
     <div style="overflow-x: auto;">
       <table>
@@ -64,6 +64,7 @@
       </thead>
       <tbody>
 
+
       {% for team in teams%}
       {% if loop.index % 2 == 0%}
         <tr class="grayrow">
@@ -71,7 +72,9 @@
       <tr class="whiterow">
         {% endif %}
           <td>{{ loop.index}}</td>
-          <td class="teami">{{ team[1] }}</td>
+          <td class="teami">
+            <a class="team_name" href="/team/t_id={{ team[0] }}">{{ team[1] }}</a>
+          </td>
           <td>{{ team[2] }}</td>
           <td>{{ team[3] }}</td>
           <td>{{ team[4] }}</td>
@@ -80,7 +83,7 @@
           <td>{{ team[7] }}</td>
         </tr>
       {% endfor %}
-
+        </tr>
       </tbody>
     </table>
     </div>
